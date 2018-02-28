@@ -30,12 +30,12 @@ public class GenericsTest {
         Person person = persons.get(0);
         American american = persons.get(0);
         Floridian floridian = persons.get(0);
-        Miamian miamian = persons.get(0);
-        persons.add(new Object());
-        persons.add(new Person());
-        persons.add(new American());
-        persons.add(new Floridian());
-        persons.add(new Miamian());
+        //Miamian miamian = persons.get(0);
+        //persons.add(new Object());
+        //persons.add(new Person());
+        //persons.add(new American());
+        //persons.add(new Floridian());
+        //persons.add(new Miamian());
         persons.add(null);
     }
 
@@ -49,12 +49,12 @@ public class GenericsTest {
 
     public void processContravariant(List<? super American> americans) {
         Object object = americans.get(0);
-        Person person = americans.get(0);
-        American american = americans.get(0);
-        Floridian floridian = americans.get(0);
-        Miamian miamian = americans.get(0);
-        americans.add(new Object());
-        americans.add(new Person());
+        //Person person = americans.get(0);
+        //American american = americans.get(0);
+        //Floridian floridian = americans.get(0);
+        //Miamian miamian = americans.get(0);
+        //americans.add(new Object());
+        //americans.add(new Person());
         americans.add(new American());
         americans.add(new Floridian());
         americans.add(new Miamian());
